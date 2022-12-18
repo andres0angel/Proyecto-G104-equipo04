@@ -1,18 +1,48 @@
 package com.example.proyecto.Entities;
 
-public class Product {
-    private String name, description;
-    private int price;
-    private int image;
+import java.util.UUID;
 
-    public Product(String name, String description, int price, int image) {
+public class Product {
+    private String id;
+    private String name;
+    private String description;
+    private int price;
+    private String image;
+    private String latitud;
+    private String longitud;
+
+    public Product(String id, String name, String description, int price, String image, String latitud, String longitud) {
+        this.id = id;
         this.name = name;
         this.description = description;
         this.price = price;
         this.image = image;
+        this.latitud = latitud;
+        this.longitud = longitud;
     }
 
+    public Product(String name, String description, int price, String image, String latitud, String longitud) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.image = image;
+        this.latitud = latitud;
+        this.longitud = longitud;
+    }
+
+
     //GETTER AND SETTER
+
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }
@@ -29,6 +59,22 @@ public class Product {
         this.description = description;
     }
 
+    public String getLatitud() {
+        return latitud;
+    }
+
+    public void setLatitud(String latitud) {
+        this.latitud = latitud;
+    }
+
+    public String getLongitud() {
+        return longitud;
+    }
+
+    public void setLongitud(String longitud) {
+        this.longitud = longitud;
+    }
+
     public int getPrice() {
         return price;
     }
@@ -37,13 +83,11 @@ public class Product {
         this.price = price;
     }
 
-    public int getImage() {
+    public String getImage() {
         return image;
     }
 
-    public void setImage(int image) {
+    public void setImage(String image) {
         this.image = image;
     }
-
-
 }
