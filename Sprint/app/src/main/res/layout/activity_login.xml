@@ -9,6 +9,14 @@
     android:gravity="center"
     tools:context=".Login">
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:text="@string/iniciaSesion" />
+
     <ImageView
         android:id="@+id/imageLogin"
         android:layout_width="wrap_content"
@@ -24,7 +32,7 @@
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Correo" />
+            android:text="@string/Correo" />
 
         <EditText
             android:id="@+id/editEmailLogin"
@@ -44,7 +52,7 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Contraseña" />
+            android:text="@string/Contraseña" />
 
         <EditText
             android:id="@+id/editPassLogin"
@@ -58,11 +66,11 @@
         android:id="@+id/btnIngresarLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ingresar" />
+        android:text="@string/Ingresar" />
 
     <Button
         android:id="@+id/btnRegistrarLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registrarse" />
+        android:text="@string/Regustrarse" />
 </LinearLayout>

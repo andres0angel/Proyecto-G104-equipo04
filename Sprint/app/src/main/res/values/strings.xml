@@ -6,6 +6,32 @@
 
     //String activity_catalogo
     <string name="tvTituloCatalogo">Catalogo</string>
+
+    <string name="Correo">Correo</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="ConfirmarContraseña">Confirmar contraseña</string>
+
+    <string name="Ingresar">Ingresar</string>
+    <string name="Regustrarse">Registrarse</string>
+
+
+    //STRING PRODUCTOS
+    <string name="crearProducto">Crear producto</string>
+    <string name="nombre">Nombre</string>
+    <string name="descripcion">Descripción</string>
+    <string name="precio">Precio</string>
+    <string name="guardar">Guardar</string>
+
+    <string name="iniciaSesion">Inicia Sesión</string>
+
+
+
+
+    <string name="confirmar">registrarse</string>
+    <string name="Registrate">Registrate</string>
+
+
+
     <string name="title_activity_login">Login</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>

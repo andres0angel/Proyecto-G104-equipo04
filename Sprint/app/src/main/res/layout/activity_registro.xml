@@ -8,10 +8,18 @@
     android:orientation="vertical"
     tools:context=".Registro">
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:text="@string/Registrate" />
+
     <ImageView
         android:id="@+id/imageReg"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="108dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <LinearLayout
@@ -24,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Correo" />
+            android:text="@string/Correo" />
 
         <EditText
             android:id="@+id/editEmailReg"
@@ -44,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Contraseña" />
+            android:text="@string/Contraseña" />
 
         <EditText
             android:id="@+id/editPassReg"
@@ -65,7 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Confirma contraseña" />
+            android:text="@string/ConfirmarContraseña" />
 
         <EditText
             android:id="@+id/editPassConfirmReg"
@@ -79,7 +87,7 @@
         android:id="@+id/btnReg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registrar" />
+        android:text="@string/confirmar" />
 
 
 </LinearLayout>

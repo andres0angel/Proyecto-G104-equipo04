@@ -37,7 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Nombre" />
+                android:text="@string/nombre" />
 
             <EditText
                 android:id="@+id/editNameForm"
@@ -45,8 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="" />
+                android:inputType="textPersonName" />
 
         </LinearLayout>
         <LinearLayout
@@ -59,7 +58,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Descripcion" />
+                android:text="@string/descripcion" />
 
             <EditText
                 android:id="@+id/editDescriptionForm"
@@ -67,8 +66,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="" />
+                android:inputType="textPersonName" />
 
         </LinearLayout>
         <LinearLayout
@@ -81,7 +79,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Precio" />
+                android:text="@string/precio" />
 
             <EditText
                 android:id="@+id/editPriceForm"
@@ -89,8 +87,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="" />
+                android:inputType="textPersonName" />
 
         </LinearLayout>
 
@@ -98,7 +95,7 @@
             android:id="@+id/btnForm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Guardar" />
+            android:text="@string/guardar" />
     </LinearLayout>
 
 
