@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         btnSplash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),Catalogo.class);
+                Intent intent = new Intent(getApplicationContext(),Login.class);
                 startActivity(intent);
             }
         });

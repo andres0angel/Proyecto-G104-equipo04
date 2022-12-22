@@ -57,6 +57,8 @@ public class Catalogo extends AppCompatActivity {
                 startActivity(intent);
                 return true;
             case R.id.itemMap:
+                intent = new Intent(getApplicationContext(), Maps.class);
+                startActivity(intent);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

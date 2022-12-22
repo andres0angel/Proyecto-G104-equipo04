@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.example.sprint.Catalogo;
 import com.example.sprint.DB.DBFirebase;
 import com.example.sprint.Entidades.Producto;
+import com.example.sprint.Form;
 import com.example.sprint.Info;
 import com.example.sprint.R;
 
@@ -108,6 +109,16 @@ public class ProductoAdapter extends BaseAdapter {
         btnEditProduct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(context, Form.class);
+                intent.putExtra("edit",true);
+                intent.putExtra("id",producto.getId());
+                intent.putExtra("name",producto.getName());
+                intent.putExtra("description",producto.getDescription());
+                intent.putExtra("price",String.valueOf(producto.getPrice()));
+                intent.putExtra("image",producto.getImage());
+                intent.putExtra("latitud",producto.getLatitud());
+                intent.putExtra("longitud",producto.getLongitud());
+                context.startActivity(intent);
 
             }
         });

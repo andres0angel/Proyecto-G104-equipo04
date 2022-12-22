@@ -16,6 +16,7 @@ public class Form extends AppCompatActivity {
     private EditText editNameForm, editDescriptionForm, editPriceForm;
     private DBFirebase dbFirebase;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +27,15 @@ public class Form extends AppCompatActivity {
         editDescriptionForm = (EditText) findViewById(R.id.editDescriptionForm);
         editPriceForm = (EditText) findViewById(R.id.editPriceForm);
         dbFirebase = new DBFirebase();
+
+        Intent intentIN = getIntent();
+        if (intentIN.getBooleanExtra("edit",false)){
+
+            editNameForm.setText(intentIN.getStringExtra("name"));
+            editDescriptionForm.setText(intentIN.getStringExtra("description"));
+            editPriceForm.setText(intentIN.getStringExtra("price"));
+        }
+
 
         btnForm.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,7 +48,15 @@ public class Form extends AppCompatActivity {
                         "",
                         ""
                 );
-                dbFirebase.insertData(producto);
+
+                if (intentIN.getBooleanExtra("edit",false)) {
+                    producto.setId(intentIN.getStringExtra("id"));
+                    dbFirebase.updateData(producto);
+                }else{
+                    dbFirebase.insertData(producto);
+
+                }
+
                 Intent intent = new Intent(getApplicationContext(), Catalogo.class);
                 startActivity(intent);
 
